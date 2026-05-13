@@ -1454,19 +1454,19 @@ body::after {
     }
 }
 /* =========================
-   FORCE DEFAULT MENU COLOR
-   (NO JS NEEDED)
+   MENU COLOR SYSTEM (FIX)
 ========================= */
 
-/* TEKS MENU DEFAULT */
-#menuX span,
-#menuX a,
-#menuX .menu-item {
-  color: #ffffff !important;
+/* DEFAULT (PUTIH) */
+#menuX .menu-item span,
+#menuX .menu-item a {
+  color: #ffffff;
+  transition: color 0.2s ease;
 }
 
-/* MENU AKTIF */
-#menuX .active span,
-#menuX .active {
-  color: #4aa3ff !important;
+/* ACTIVE / CLICKED (BIRU) */
+#menuX .menu-item.active span,
+#menuX .menu-item.active a,
+#menuX .menu-item:active span {
+  color: #4aa3ff;
 }
