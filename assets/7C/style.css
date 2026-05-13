@@ -19,3 +19,8 @@
 #menuX .menu-item:active span {
   color: #6cb7ff;
 }
+#menuX .menu-item.selected span,
+#menuX .menu-item.current span,
+#menuX .menu-item.on span {
+  color: #4aa3ff;
+}
