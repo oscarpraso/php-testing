@@ -1467,7 +1467,7 @@ body::after {
 #menuX [data-target]:active span,
 #menuX .flex-col:active, 
 #menuX .flex-col:active span {
-    color: #ffd54a !important;
+    color: #017aeb !important;
     transform: scale(0.95);
 }
 
@@ -1477,13 +1477,13 @@ body::after {
 #menuX .active span,
 #menuX .text-indigo-400,
 #menuX .text-indigo-400 span {
-    color: #ffd54a !important;
+    color: #1994e6 !important;
     font-weight: bold !important;
 }
 
 /* Menargetkan icon (SVG) agar ikut kuning statis */
 #menuX .active svg,
 #menuX .text-indigo-400 svg {
-    fill: #ffd54a !important;
-    color: #ffd54a !important
+    fill: #229aeb !important;
+    color: #31aae2 !important
 }
