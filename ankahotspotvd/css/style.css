@@ -175,8 +175,8 @@ body.ied html,html.ied {
 }
 
 .toggle-btn.active {
-    background: linear-gradient(135deg,#d4af37,#f5e6a8);
-    color: #0f5132;
+    background: linear-gradient(135deg, #1e40af 0%, #0284c7 70%, #e0f2fe 100%) !important;
+    color: #dfe9e4;
     font-weight: 600
 }
 
@@ -398,8 +398,8 @@ body.ied .paket-card {
 }
 
 .paket-btn.active {
-    background: linear-gradient(135deg,#d4af37,#f5e6a8);
-    color: #0f5132;
+    background: linear-gradient(135deg, #1e40af 0%, #0284c7 70%, #e0f2fe 100%) !important;
+    color: #e5eeea;
     font-weight: 600
 }
 
@@ -560,7 +560,7 @@ body.ied .error-main-icon {
 }
 
 #errorPageMessage {
-    background: rgb(220 53 69 / .15);
+    background: rgba(228, 44, 62, 0.541);
     border: 1px solid rgb(220 53 69 / .35);
     color: #ffd6d6;
     padding: 12px 14px;
@@ -600,8 +600,8 @@ body.ied .error-main-icon {
     width: 100%;
     padding: 14px;
     border-radius: 16px;
-    background: linear-gradient(135deg,#d4af37,#f5e6a8);
-    color: #0f5132;
+     background: linear-gradient(135deg, #1e40af 0%, #0284c7 70%, #e0f2fe 100%) !important;
+    color: #e3ebe7;
     font-weight: 600;
     text-decoration: none;
     margin-top: 10px;
@@ -664,8 +664,8 @@ body.ied .error-main-icon {
     border-radius: 16px;
     font-weight: 600;
     text-decoration: none;
-    color: #0f5132;
-    background: linear-gradient(135deg,#d4af37,#f5e6a8);
+    color: #8de401;
+    background: linear-gradient(135deg, #1e40af 0%, #0284c7 70%, #e0f2fe 100%) !important;
     box-shadow: 0 10px 22px rgb(0 0 0 / .25);
     transition: all .25s ease
 }
@@ -1108,64 +1108,68 @@ body.faq .header-subtitle,body[class*="faq"] .header-subtitle {
   width:180px;          /* 🔥 tambah lebar */
 }
 /* =========================
-   MODERN THEME OVERRIDE
+   MODERN THEME OVERRIDE (SUPER DARK BLUE)
    (TIDAK MERUSAK STRUKTUR)
 ========================= */
 
-/* BACKGROUND */
+/* BACKGROUND: Hitam pekat dipadukan dengan Biru Deep Navy */
 html {
     background: linear-gradient(
         135deg,
-        rgba(2, 6, 23, 0.95) 0%,
-        rgba(30, 27, 75, 0.95) 50%,
-        rgba(59, 7, 100, 0.98) 100%
+        rgba(3, 7, 18, 0.98) 0%,     /* Hitam Midnight */
+        rgba(15, 23, 42, 0.96) 50%,   /* Slate Dark Blue */
+        rgba(30, 58, 138, 0.98) 100%  /* Deep Navy Blue */
     ),
     url(../img/background.jpg) !important;
 }
 
-/* WRAP / CARD */
+/* WRAP / CARD: Transparan gelap (Glassmorphism gelap) */
 .wrap {
-    background: rgba(255,255,255,0.06) !important;
-    border: 1px solid rgba(139,92,246,0.25) !important;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4) !important;
+    background: rgba(15, 23, 42, 0.45) !important; /* Efek kaca gelap murni */
+    border: 1px solid rgba(56, 189, 248, 0.15) !important; /* Border biru es tipis */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6) !important; /* Bayangan lebih pekat */
 }
 
-/* INPUT */
+/* INPUT: Box input gelap misterius */
 .input-group {
-    background: rgba(255,255,255,0.08) !important;
-    border: 1px solid rgba(139,92,246,0.3) !important;
+    background: rgba(3, 7, 18, 0.6) !important;
+    border: 1px solid rgba(56, 189, 248, 0.2) !important;
 }
 
-/* BUTTON */
+/* BUTTON: Gradasi Biru Gelap ke Biru Neon Cerah dengan kilau putih tipis */
 input[type="submit"],
 .status-btn,
 .paket-action,
 .paket-action button {
-    background: linear-gradient(135deg,#3b82f6,#8b5cf6) !important;
-    color: #fff !important;
+    background: linear-gradient(135deg, #1e40af 0%, #0284c7 70%, #e0f2fe 100%) !important;
+    color: #ffffff !important; /* Teks putih bersih agar menyala di tombol biru */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3) !important; /* Efek neon glow bawah */
 }
 
-/* NAV ACTIVE */
+/* NAV ACTIVE: Menu aktif senada dengan tombol utama */
 .bottom-nav a.active {
-    background: linear-gradient(135deg,#3b82f6,#8b5cf6) !important;
-    color: #fff !important;
+    background: linear-gradient(135deg, #1e40af 0%, #0284c7 70%, #e0f2fe 100%) !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
 }
 
-/* TEXT ACCENT (ganti emas ➜ ungu) */
+/* TEXT ACCENT: Putih kebiruan terang agar teks judul menonjol di latar gelap */
 .header-title,
 .paket-name,
 #errorPageTitle {
-    color: #c4b5fd !important;
+    color: #f0f9ff !important; 
 }
 
-/* ICON */
+/* ICON: Biru Cyan Elektrik agar menyala di area gelap */
 .ico,
 .error-main-icon,
 .contact-icon {
-    color: #8b5cf6 !important;
+    color: #06b6d4 !important; 
 }
 
-/* BORDER GOLD ➜ UNGU */
+/* BORDER: Mengubah semua garis pembatas emas menjadi biru navy transparan */
 .wrap,
 .prayer-box,
 .prayer-item,
@@ -1173,17 +1177,19 @@ input[type="submit"],
 .contact-card,
 .page-header,
 .faq-item {
-    border-color: rgba(139,92,246,0.3) !important;
+    border-color: rgba(56, 189, 248, 0.12) !important;
 }
 
-/* HAPUS KUNING EMAS */
+/* DATA HIGHLIGHT: Angka jam & harga menggunakan warna Biru Es menyala */
 .prayer-item span,
 .paket-price {
-    color: #a78bfa !important;
+    color: #38bdf8 !important;
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.3) !important; /* Efek glow halus */
 }
 
-/* ERROR tetap merah tapi modern */
+/* ERROR: Merah gelap abis (Crimson Dark) */
 .info.alert {
-    background: rgba(220,53,69,0.18) !important;
-    border: 1px solid rgba(220,53,69,0.5) !important;
+    background: rgba(153, 27, 27, 0.25) !important;
+    border: 1px solid rgba(220, 38, 38, 0.4) !important;
+    color: #fef2f2 !important;
 }
